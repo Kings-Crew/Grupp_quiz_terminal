@@ -1,0 +1,44 @@
+#Dokumentationsfilen. Här finns protokoll och regelverk för hur programmet skall konstrueras
+#Även vad som har gjorts i projekten hamnar här
+
+________________________#________________________#________________________#________________________#________________________#________________________#
+---Style GUIDE---
+    1. Om möjligt, efterfölj PEP-8 - Style Guide For Python så mycket som det går
+    
+    2. variabelnamn,funktioner, klasser mm. som består av flera ord. Skall ha snake_case
+    
+    3. variabelnamn, funktioner, klasser mm. skall vara beskrivande. Det betyder:
+        1. Istället för att lägga mycket text på en kommentar som beskriver koden. Så skriv funktioner och variabler, etc som är självbeskrivande. T.ex.
+           ----------------------------------------------------------------------------------------------------------------------
+          │information_om_spelar_poäng = list() #Lagrar data <--- KORREKT                                                       │
+          │                                                                                                                     │
+          │ spelar_data = [] #Denna funktion syftar i att lagra alla poäng som spelaren har fått <--- INKORREKT                 │
+          │                                                                                                                     │
+          │    def frågor_utskrift():  #Denna funktion syftar i att skriva ut alla frågor som den har hämtat <--- INKORREKT     │  
+          │          pass                                                                                                       │
+          │                                                                                                                     │
+          │      def hämtar_frågor_skrivut_frågor(): #Hämtar & printar <--- KORREKT                                             │
+          │          pass                                                                                                       │
+           ----------------------------------------------------------------------------------------------------------------------
+    
+    4. För förbättrad läsbarhet, när vi skall tilldela en variabel ett tomt värde (T.ex. var="") använd funktionsnamnen
+        Om fallet är sådant att variablen har multidimensionella egenskaper behöver inte denna regel efterföljas
+        1. ------------------------------------------------------------------------------------------------------
+          │var = str(), var = list(), var = dict(), var = tuple() <--- KORREKT                                  │
+          │                                                                                                     │
+          │Var = "", var = [], var = {}, var = () <-- INKORREKT                                                 │
+           -----------------------------------------------------------------------------------------------------
+________________________#________________________#________________________#________________________#________________________#________________________#
+
+
+--Jimmy 2022-09-26--------
+Skapde Git Hub repository
+--------------------------
+
+--Marcus 2022-09-27----------------------------------------------
+Lade upp main.py filen, questions.py filen
+Första funktionerna för utskrift av frågor lades in i main.py
+Skall fortsätta med det idag
+----------------------------------------------------------------
+
+

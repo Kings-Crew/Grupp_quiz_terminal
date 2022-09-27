@@ -24,7 +24,7 @@ class spelare():                    #Här lagras data om spelare & deras poäng
 
     #Test av objekt
 
-Kalle = spelare("sfgds", 5)
+Kalle = spelare("Kalle", 5)
 print(Kalle)
 
     

@@ -17,4 +17,3 @@ questions = [
     {"Question 10", },
 ]
 
-print(questions)

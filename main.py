@@ -11,10 +11,11 @@ def main():
 
 class spelare():                    #Här lagras data om spelare & deras poäng
     def __init__(self,namn:str,poängtavla:int):
-        assert namn != str(),f"{self.namn} innehåller tecken som inte är bokstäver"
-        
+        assert type(namn) == str ,"Är inte en string(str) funktion"
         self.namn = namn
         self.poängtavla = poängtavla
+
+        
 
 
     def __repr__(self):
@@ -22,7 +23,8 @@ class spelare():                    #Här lagras data om spelare & deras poäng
 
 
     #Test av objekt
-Kalle = spelare("Kalle", 5)
+
+Kalle = spelare("sfgds", 5)
 print(Kalle)
 
     

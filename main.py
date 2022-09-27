@@ -1,6 +1,7 @@
 from questions import questions
 
 def main():
+    
     def funktion_för_frågor():      #Tar emot och skriver ut frågor
         pass
        
@@ -10,7 +11,7 @@ def main():
 
 class spelare():                    #Här lagras data om spelare & deras poäng
     def __init__(self,namn:str,poängtavla:int):
-        assert namn == str(),f"{self.namn} innehåller tecken som inte är bokstäver"
+        assert namn != str(),f"{self.namn} innehåller tecken som inte är bokstäver"
         
         self.namn = namn
         self.poängtavla = poängtavla

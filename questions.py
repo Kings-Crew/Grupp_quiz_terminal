@@ -4,16 +4,11 @@
 #Möjligtvis om man skall använda sig av defaultdict biblioteket för multidimensionella dicts()
 #Kanske blir för komplex: https://www.geeksforgeeks.org/defaultdict-in-python/ //Marcus 2022-09-27
 
-questions = [
-    {"Question 1", },
-    {"Question 2", },
-    {"Question 3", },
-    {"Question 4", },
-    {"Question 5", },
-    {"Question 6", },
-    {"Question 7", },
-    {"Question 8", },
-    {"Question 9", },
-    {"Question 10", },
-]
-
+class frågor:
+    def __init__(self,question,answer1,answer2,answer3,answer4,rightanswer):
+        self.question = question
+        self.answer1 = answer1
+        self.answer2 = answer2
+        self.answer3 = answer3
+        self.answer4 = answer4
+        self.rightanswer = rightanswer

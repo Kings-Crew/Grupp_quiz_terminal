@@ -39,9 +39,9 @@ class Main:
         
         def felhantering_för_input():            #Felhantering utifall spelaren skriver något konstigt
             print("Hej och välkommen till King Crew's AB quiz spel")
-            #sleep(1)
+            sleep(1)
             print("Du ska svara på 10 frågor...")
-            #sleep(1)
+            sleep(1)
             print("Men först, vad heter du?")
             global namn_
             while True:

@@ -30,15 +30,15 @@ class Frågor:
         """ )
 
 fråga_1 = Frågor("Vem skapade Python?:", "Stefan Löfven", "Mike Tyson", "Bjarne Stroustrup", "Guido van Rossum", "D")
-fråga_2 = Frågor("Vad är Python?:", "tolkat språk", "en giftig orm", "ett spel", "en båt", "d")
-fråga_3 = Frågor("dsfsdfsd", "dsfsdfsd", "dsfsdfsd", "dsfsdfsd", "dsfsdfsd", "dsfsdfsd")
-fråga_4 = Frågor("dsfsdfsd", "dsfsdfsd", "dsfsdfsd", "dsfsdfsd", "dsfsdfsd", "dsfsdfsd")
-fråga_5 = Frågor("dsfsdfsd", "dsfsdfsd", "dsfsdfsd", "dsfsdfsd", "dsfsdfsd", "dsfsdfsd")
-fråga_6 = Frågor("dsfsdfsd", "dsfsdfsd", "dsfsdfsd", "dsfsdfsd", "dsfsdfsd", "dsfsdfsd")
-fråga_7 = Frågor("dsfsdfsd", "dsfsdfsd", "dsfsdfsd", "dsfsdfsd", "dsfsdfsd", "dsfsdfsd")
-fråga_8 = Frågor("dsfsdfsd", "dsfsdfsd", "dsfsdfsd", "dsfsdfsd", "dsfsdfsd", "dsfsdfsd")
-fråga_9 = Frågor("dsfsdfsd", "dsfsdfsd", "dsfsdfsd", "dsfsdfsd", "dsfsdfsd", "dsfsdfsd")
-fråga_10 = Frågor("dsfsdfsd", "dsfsdfsd", "dsfsdfsd", "dsfsdfsd", "dsfsdfsd", "dsfsdfsd")
+fråga_2 = Frågor("Vad är Python?:", "Tolkat språk", "En giftig orm", "Ett spel", "En båt", "A")
+fråga_3 = Frågor("När uppfann man Python?", "1992", "1995", "1991", "1988", "C")
+fråga_4 = Frågor("Vilket företag har Python som sitt officiella språk?", "Ericsson", "Pressbyrån", "Google", "Snapchat", "C")
+fråga_5 = Frågor("Vad kan språket andvändas för?", "Skicka paket", "Webbutveckling", "Felsökning", "Anti virusskydd", "B")
+fråga_6 = Frågor("Python-bytekoden sparas i vilken filform?", ".txt", ".pdf", ".jpeg", ".py", "D")
+fråga_7 = Frågor("Varför är Python så populärt?", "Open source", "Reklamfritt", "Sparar ändringar per automatik", "Molnbaserad", "A")
+fråga_8 = Frågor("Hur många års erfaraenhet av programmering behöver man för att lära sig Python", "2 år", "10 år", "5 år", "Ingen erfarenhet alls", "D")
+fråga_9 = Frågor("Vad behövs för att lära sig en python?", "En skruvmejsel", "En exklusiv injudan", "En dator", "Tillgång till cryptovalutor", "C")
+fråga_10 = Frågor("Hur många python utvecklare finns det?", "Över 7 miljoner", "Över 10 miljoner", "Över 25 miljoner", "Över 100 miljoner", "A")
 
 
 lista_på_frågor = [fråga_1,fråga_2,fråga_3,

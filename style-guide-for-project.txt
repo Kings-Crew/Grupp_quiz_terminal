@@ -1,5 +1,5 @@
 #Dokumentationsfilen. Här finns protokoll och regelverk för hur programmet skall konstrueras
-#Även vad som har gjorts i projekten hamnar här
+
 
 ________________________#________________________#________________________#________________________#________________________#________________________#
 ---Style GUIDE---

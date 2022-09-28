@@ -1,4 +1,3 @@
-from re import X
 from questions import *
 from time import sleep
 poängtavla_ = 0

@@ -3,7 +3,7 @@ from time import sleep
 poängtavla_ = 0
 namn_ = str()
 
-class Spelare():#Här lagras data om spelare
+class Spelare():#Here are the player info stored
     def __init__(self,namn:str):
         assert type(namn) == str ,"Är inte en string(str) funktion"
         self.namn = namn

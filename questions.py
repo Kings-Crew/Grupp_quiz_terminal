@@ -54,8 +54,7 @@ lista_på_frågor = [fråga_1,fråga_2,fråga_3,
 
 
 
-#if spelare_input !=
-print(fråga_1.rightanswer)
+
 
 
 

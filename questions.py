@@ -22,6 +22,7 @@ class frågor:
     
         Answer-C: {self.answer3} \t Answer-D: {self.answer4}
     
-        """ )
+        """ 
+        )
 
 

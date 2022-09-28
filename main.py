@@ -5,19 +5,16 @@ namn_ = str()
 #Alla frågor sparas som instansvariabler från klassen: Frågor()
 
 class Spelare():                    #Här lagras data om spelare & deras poäng
-    def __init__(self,namn:str,poängtavla=0):
+    def __init__(self,namn:str):
         assert type(namn) == str ,"Är inte en string(str) funktion"
         self.namn = namn
-        self.poängtavla = poängtavla
 
     def __repr__(self):
-        return f"Namn på spelare: {self.namn}\nTotalt poäng för {self.namn}: {self.poängtavla} poäng"
+        return f"Namn på spelare: {self.namn}"
 
 
 
-class Main:  
-    
-    
+class Main:    
     @staticmethod
     def funktion_för_frågor():      #Tar emot och skriver ut frågor
         global poängtavla_
@@ -35,8 +32,7 @@ class Main:
             
     
     
-    def main():                                                     #Detta är funktionen för att spela spelet
-        
+    def main():                                  #Detta är funktionen för att spela spelet  
         def felhantering_för_input():            #Felhantering utifall spelaren skriver något konstigt
             print("Hej och välkommen till King Crew's AB quiz spel")
             sleep(1)
@@ -57,12 +53,13 @@ class Main:
                         val = float(prompt)
                         print("Input är ett flyttal")
                     except ValueError:
-                        namn_ = Spelare(prompt,poängtavla_)
+                        namn_ = Spelare(prompt)
                         break
         while True:
             felhantering_för_input()
             Main.funktion_för_frågor()
-            print(namn_)
+            
+            print(f"{namn_}\n Antal poäng:{poängtavla_}")
             print("Tryck 1 för JA \nTryck 2 för NEJ")
             prompt = input("Vill du spela igen? \n>>>")
             if prompt == "1":

@@ -1,49 +1,185 @@
-#Dokumentationsfilen. Här finns protokoll och regelverk för hur programmet skall konstrueras
-#Även vad som har gjorts i projekten hamnar här
+commit bf5953d2bd2fd64591c7a7faf06a5d490c425eb8
+Author: Marcus <marcus@Marcuss-MacBook-Air.local>
+Date:   Wed Sep 28 17:19:27 2022 +0200
 
-________________________#________________________#________________________#________________________#________________________#________________________#
----Style GUIDE---
-    1. Om möjligt, efterfölj PEP-8 - Style Guide For Python så mycket som det går
-    
-    2. variabelnamn,funktioner, klasser mm. som består av flera ord. Skall ha snake_case
-    
-    3. variabelnamn, funktioner, klasser mm. skall vara beskrivande. Det betyder:
-        1. Istället för att lägga mycket text på en kommentar som beskriver koden. Så skriv funktioner och variabler, etc som är självbeskrivande. T.ex.
-           ----------------------------------------------------------------------------------------------------------------------
-          │information_om_spelar_poäng = list() #Lagrar data <--- KORREKT                                                       │
-          │                                                                                                                     │
-          │ spelar_data = [] #Denna funktion syftar i att lagra alla poäng som spelaren har fått <--- INKORREKT                 │
-          │                                                                                                                     │
-          │    def frågor_utskrift():  #Denna funktion syftar i att skriva ut alla frågor som den har hämtat <--- INKORREKT     │  
-          │          pass                                                                                                       │
-          │                                                                                                                     │
-          │      def hämtar_frågor_skrivut_frågor(): #Hämtar & printar <--- KORREKT                                             │
-          │          pass                                                                                                       │
-           ----------------------------------------------------------------------------------------------------------------------
-    
-    4. För förbättrad läsbarhet, när vi skall tilldela en variabel ett tomt värde (T.ex. var="") använd funktionsnamnen
-        Om fallet är sådant att variablen har multidimensionella egenskaper behöver inte denna regel efterföljas
-        1. ------------------------------------------------------------------------------------------------------
-          │var = str(), var = list(), var = dict(), var = tuple() <--- KORREKT                                  │
-          │                                                                                                     │
-          │Var = "", var = [], var = {}, var = () <-- INKORREKT                                                 │
-           -----------------------------------------------------------------------------------------------------
-________________________#________________________#________________________#________________________#________________________#________________________#
+    Tog bort print funktion i questions.py
 
+commit 104c2ab17d45bee6e1a9a05c5a78395b15148dbb
+Merge: 1744e0c b68069c
+Author: Marcus <marcus@Marcuss-MacBook-Air.local>
+Date:   Wed Sep 28 17:17:09 2022 +0200
 
---Jimmy 2022-09-26--------
-Skapde Git Hub repository
---------------------------
+    Fixat felhantering, skapade loop så att spelaren kan antingen avlusta spelet eller fortsätta spelet
 
---Marcus 2022-09-27----------------------------------------------
-Lade upp main.py filen, questions.py filen
-Första funktionerna för utskrift av frågor lades in i main.py
-Skall fortsätta med det idag
-----------------------------------------------------------------
+commit 1744e0c7fd81e0bf979c322d8d07942d8da3ca7e
+Author: Marcus <marcus@Marcuss-MacBook-Air.local>
+Date:   Wed Sep 28 17:11:27 2022 +0200
 
+    Fixade så att spelaren kan avsluta spelet när dem vill, felhantering så att namnet på spelaren inte är en float eller integer
 
---Marcus 2022-09-27----------------------------------------------------------------------
-Lade in en class() för spelare, utökade med variabler i funktionerna som finns i main.py
------------------------------------------------------------------------------------------
+commit b68069c3c1357f5446081efb3cd75551f277981f
+Author: donsueco <bam.mozafar@gmail.com>
+Date:   Wed Sep 28 15:23:13 2022 +0200
 
+    Jag har lagt in frågor med svar till spelet
 
+commit 3fb7b804d2550e21fa4cd02c0ca80794822b971c
+Merge: 784a3b2 914e9c1
+Author: Marcus <marcus@Marcuss-MacBook-Air.local>
+Date:   Wed Sep 28 14:38:41 2022 +0200
+
+    Skapade objekt från klassen Frågor, skapade en loop som skriver ut alla frågor
+
+commit 784a3b24cf224e44d5606228202278612804a774
+Author: Marcus <marcus@Marcuss-MacBook-Air.local>
+Date:   Wed Sep 28 14:31:12 2022 +0200
+
+    Skapade en for loop för att skriva ut frågor, skapade även 10 frågeobjekt i filen questions.py
+
+commit 914e9c1f9f18cd783335b2759577274e0265e7ec
+Author: Shallange <jimmy.kroneld@hotmail.com>
+Date:   Wed Sep 28 13:54:47 2022 +0200
+
+    kommenterade i klasser
+
+commit 0ac5931bc44b4a0f76530cc4372ea163d4faa489
+Author: Marcus-Peterson <73422974+Marcus-Peterson@users.noreply.github.com>
+Date:   Wed Sep 28 12:49:43 2022 +0200
+
+    Delete frogor.py
+
+commit 87e23453dfc03ff456c5cf22f75565b03ce6b264
+Merge: 7a3dbeb 646da61
+Author: Shallange <jimmy.kroneld@hotmail.com>
+Date:   Wed Sep 28 12:49:10 2022 +0200
+
+    Merge branch 'main' of https://github.com/Shallange/Grupp_quiz_terminal
+
+commit 7a3dbeb736bc3b97869f3120336c29e24e84a34a
+Author: Shallange <jimmy.kroneld@hotmail.com>
+Date:   Wed Sep 28 12:48:03 2022 +0200
+
+    lade till metod för print av questions
+
+commit 646da6137f2d8678fd2489c9b99a8d98d9d2b890
+Merge: aa3dfc5 235bf08
+Author: Marcus <marcus@Marcuss-MacBook-Air.local>
+Date:   Wed Sep 28 12:03:40 2022 +0200
+
+    Lade till efternamn för Jonatan
+
+commit aa3dfc57cdb3b8ee3982a540b9640a7982031d47
+Author: Marcus <marcus@Marcuss-MacBook-Air.local>
+Date:   Wed Sep 28 12:01:53 2022 +0200
+
+    Lade till efternamn för Jonatan
+
+commit 235bf085b6e9406fd772295fe9aeab451d973fac
+Merge: f69abcb 4970373
+Author: Shallange <jimmy.kroneld@hotmail.com>
+Date:   Wed Sep 28 11:59:41 2022 +0200
+
+    Merge branch 'main' of https://github.com/Shallange/Grupp_quiz_terminal
+
+commit f69abcbf2c14fd275c06c52710bdd5a11ce272b7
+Author: Shallange <jimmy.kroneld@hotmail.com>
+Date:   Wed Sep 28 11:55:58 2022 +0200
+
+    ändrade och lade till class för questions
+
+commit 4970373b62e7fb63a88730393dd934455691681e
+Author: Marcus <marcus@Marcuss-MacBook-Air.local>
+Date:   Wed Sep 28 10:53:25 2022 +0200
+
+    Ändrade namn på documentation.txt, till style guide.txt, här sparas inte dokumentation utan enbart regler för projektet
+
+commit 0c1c6d145cd6e1c84bd931aaaa750b48db2a8a18
+Merge: 9102f7b ba57b86
+Author: Shallange <jimmy.kroneld@hotmail.com>
+Date:   Wed Sep 28 10:27:33 2022 +0200
+
+    Merge branch 'main' of https://github.com/Shallange/Grupp_quiz_terminal
+
+commit 9102f7b35983532159b6a622c905d6b0f970522f
+Author: Shallange <jimmy.kroneld@hotmail.com>
+Date:   Wed Sep 28 10:27:03 2022 +0200
+
+    lagt till en fil med frågor(dict-form)
+
+commit ba57b867f703a8ad99dd51c8bd67ece521353fa3
+Author: Marcus <marcus@Marcuss-MacBook-Air.local>
+Date:   Wed Sep 28 09:53:45 2022 +0200
+
+    Lade in efternamn för Bam
+
+commit 30a7b9309752d09ded78a747557d938ebc9cd4d8
+Author: Marcus <marcus@Marcuss-MacBook-Air.local>
+Date:   Wed Sep 28 09:51:04 2022 +0200
+
+    Flyttade en rad
+
+commit fbe4a11bef01439743184aad24fe7ff8a1cf626b
+Author: Marcus <marcus@Marcuss-MacBook-Air.local>
+Date:   Wed Sep 28 09:45:54 2022 +0200
+
+    Flyttade en rad
+
+commit 934ef245f684aefe19601242bde58bea2267843b
+Author: Marcus <marcus@Marcuss-MacBook-Air.local>
+Date:   Tue Sep 27 18:30:40 2022 +0200
+
+    Ändrade namn på Kalle
+
+commit 85a17f4096eb422ed8b7c5f92aeeb031a362f46f
+Author: Marcus <marcus@Marcuss-MacBook-Air.local>
+Date:   Tue Sep 27 18:29:50 2022 +0200
+
+    Tog bort utskriften i questions.py, ändrade på assert funktionen i class spelare() så att denna kollar type() för self.namn
+
+commit d15bb08fbf68a7233f03b05f3e4e88c5d023b148
+Author: Marcus <marcus@Marcuss-MacBook-Air.local>
+Date:   Tue Sep 27 18:07:00 2022 +0200
+
+    Ändrade på assert funktion, så att det blev != istället för ==, innan var det ==
+
+commit d39a7fcb451f4a206b686e3f046415e33a09c3be
+Author: Marcus <marcus@Marcuss-MacBook-Air.local>
+Date:   Tue Sep 27 17:00:15 2022 +0200
+
+    Dokumentation av dagens arbete
+
+commit 74097c4f91e46fbbdce0d4df03d8342ac2ae7c4f
+Author: Marcus <marcus@Marcuss-MacBook-Air.local>
+Date:   Tue Sep 27 16:57:12 2022 +0200
+
+    Lade in en class() för spelare, skapde en import for questions.py lade till en variabel i lagra_frågor()
+
+commit 7cad727826e1fbfbde95246ec34edd02ee0c129c
+Author: Marcus <marcus@Marcuss-MacBook-Air.local>
+Date:   Tue Sep 27 16:22:58 2022 +0200
+
+    Första uppladdningen av dokumentationsfilen
+
+commit 93dfba68f0bd6b8caa9c715c93db9468eb8c183b
+Author: Marcus <marcus@Marcuss-MacBook-Air.local>
+Date:   Tue Sep 27 15:59:52 2022 +0200
+
+    Funktionaliteten kring utskriften av frågorna som finns i Quiz-spelet
+
+commit f24bccc92a4f1f9bbb6c2870b4cfe382c9b07f89
+Author: Marcus <marcus@Marcuss-MacBook-Air.local>
+Date:   Tue Sep 27 14:56:49 2022 +0200
+
+    Lade upp python filen för alla frågor som skall vara med i quiz programmet
+
+commit b23b264985c1f132a8eb589b661862dd616d1617
+Author: Marcus <marcus@Marcuss-MacBook-Air.local>
+Date:   Tue Sep 27 14:47:39 2022 +0200
+
+    Lade till information i README
+
+commit d2677cdbabb940597d45c42422aa140894e449ac
+Author: Jimmy <53408265+Shallange@users.noreply.github.com>
+Date:   Mon Sep 26 17:39:30 2022 +0200
+
+    Initial commit

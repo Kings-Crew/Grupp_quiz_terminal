@@ -5,16 +5,16 @@
 #Kanske blir för komplex: https://www.geeksforgeeks.org/defaultdict-in-python/ //Marcus 2022-09-27
 
 class frågor:
-    def __init__(self,question,answer1,answer2,answer3,answer4,rightanswer):
-        self.question = question
+    def __init__(self,question,answer1,answer2,answer3,answer4,rightanswer):#contructor som körs varje gång en ny instans av klass skapas
+        self.question = question  
         self.answer1 = answer1
         self.answer2 = answer2
         self.answer3 = answer3
         self.answer4 = answer4
         self.rightanswer = rightanswer
         
-    def printQ(self):
-        
+    def printQ(self):#self referar till instance namnet och används som argument till methoden exemepel: frågor.printQ(fråga_1)
+        #printar ut hela frågan i detta format i terminalen
         print(f"""
         Question: {self.question}
     

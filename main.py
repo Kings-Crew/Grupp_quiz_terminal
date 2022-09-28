@@ -15,8 +15,6 @@ class spelare():                    #Här lagras data om spelare & deras poäng
         self.namn = namn
         self.poängtavla = poängtavla
 
-        
-
 
     def __repr__(self):
         return f"Namn på spelare: {self.namn}, totalt poäng för {self.namn}: {self.poängtavla} poäng"

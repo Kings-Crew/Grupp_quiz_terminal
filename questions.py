@@ -12,3 +12,16 @@ class frågor:
         self.answer3 = answer3
         self.answer4 = answer4
         self.rightanswer = rightanswer
+        
+    def printQ(self):
+        
+        print(f"""
+        Question: {self.question}
+    
+        Answer-A: {self.answer1} \t Answer-B: {self.answer2}
+    
+        Answer-C: {self.answer3} \t Answer-D: {self.answer4}
+    
+        """ )
+
+

@@ -1,9 +1,3 @@
-#Alla frågor lagras i en separat fil. Det lagras som en dict() för enkelt åtkomst, 
-#Och för att det på ett enkelt sätt skall kunna skickas som t.ex. en JSON
-
-#Möjligtvis om man skall använda sig av defaultdict biblioteket för multidimensionella dicts()
-#Kanske blir för komplex: https://www.geeksforgeeks.org/defaultdict-in-python/ //Marcus 2022-09-27
-
 class Frågor:
     def __init__(self,question,answer1,answer2,answer3,answer4,rightanswer):
         self.question = question
@@ -13,7 +7,8 @@ class Frågor:
         self.answer4 = answer4
         self.rightanswer = rightanswer
 
-
+#   Method that takes the created instances as argument, and prints out the question and the answers in the terminal 
+#   This method is called when "fråga_1-10" instance is printed
     def __repr__(self):
         
         return(f"""
@@ -25,11 +20,10 @@ class Frågor:
     
         Answer-C: {self.answer3} \t Answer-D: {self.answer4}
 
-        
-    
         """ 
         )
 
+#   Creates instances of class Frågor, 10 questions are made
 fråga_1 = Frågor("Vem skapade Python?:", "Stefan Löfven", "Mike Tyson", "Bjarne Stroustrup", "Guido van Rossum", "D")
 fråga_2 = Frågor("Vad är Python?:", "Tolkat språk", "En giftig orm", "Ett spel", "En båt", "A")
 fråga_3 = Frågor("När uppfann man Python?", "1992", "1995", "1991", "1988", "C")
@@ -41,7 +35,7 @@ fråga_8 = Frågor("Hur många års erfaraenhet av programmering behöver man f�
 fråga_9 = Frågor("Vad behövs för att lära sig en python?", "En skruvmejsel", "En exklusiv injudan", "En dator", "Tillgång till cryptovalutor", "C")
 fråga_10 = Frågor("Hur många python utvecklare finns det?", "Över 7 miljoner", "Över 10 miljoner", "Över 25 miljoner", "Över 100 miljoner", "A")
 
-
+#   The created questions instances are put into a list, (used in loop)
 lista_på_frågor = [fråga_1,fråga_2,fråga_3,
                    
                    fråga_4,fråga_5,fråga_6,

@@ -43,16 +43,21 @@ class Main:
             global namn_
             while True:#If user enter an int or float the user is stuck at entering their name
                 prompt = input(">>>")
-
+                if prompt.isspace() == True:
+                    print("Ditt namn innehåller tomma tecken")
+                    continue
+                elif prompt == "":
+                    print("Du glömde skriva ditt namn")
+                    continue
                 try:
                     #Converts promt to intiger, if try succeds that means that the users input was int
                     värde = int(prompt)
-                    print("Du har ett heltal i din input")
+                    print("Ditt namn måste innehålla minst en bokstav")
                 except ValueError:
                     try:
                     #Converts the promt to float, same as above(int) but instead the user have put in float
                         val = float(prompt)
-                        print("Input är ett flyttal")
+                        print("Ditt namn måste innehålla minst en bokstav")
                     except ValueError:#If it fails to do so it means that the user used letters and then it assigns the name variable
                         namn_ = Spelare(prompt)
                         break
@@ -61,9 +66,10 @@ class Main:
             Main.funktion_för_frågor()#printing questions and awaits User input
             
             print(f"{namn_}\n Antal poäng:{poängtavla_} av 10 möjliga")
-            print("Tryck 1 för JA \nTryck 2 för NEJ")
-            prompt = input("Vill du spela igen? \n>>>")
-            if prompt == "1":#Continues to run this while-loop
+            
+            prompt = input("Vill du avsluta spelet: Tryck 2 sen enter \nTryck Enter för att spela igen \n>>>")
+            
+            if prompt == "":#Continues to run this while-loop
                 continue
             elif prompt == "2":#Breakes out of while-loop
                 break
